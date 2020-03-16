@@ -13,8 +13,11 @@ if(process.env.NODE_ENV === 'development') {
 }
 
 const locations = require('./routes/visitedLocations');
+const news = require('./routes/govNews');
 
 app.use('/api/locations',locations);
+app.use('/api/news',news);
+
 
 
 const PORT = process.env.PORT || 4000

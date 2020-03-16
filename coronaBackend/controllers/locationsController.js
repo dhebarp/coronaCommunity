@@ -25,7 +25,7 @@ exports.getLocations = async (req, res, next) => {
 //@access public
 exports.addLocation = async (req, res, next) => {
     try {
-        const {venueName, address, visitDate } = req.body;
+        const {venueName, address, visitDate, geometry } = req.body;
         const location = await Location.create(req.body);
 
         return res.status(201).json({
