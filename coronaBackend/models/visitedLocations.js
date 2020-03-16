@@ -22,4 +22,4 @@ const LocationSchema = new mongoose.Schema({
     
 });
 
-module.exports = mongoose.model('Transaction', LocationSchema)
+module.exports = mongoose.model('Locations', LocationSchema)

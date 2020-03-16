@@ -7,8 +7,4 @@ router
 .get(getLocations)
 .post(addLocation);
 
-// router
-// .route('/:id')
-// .delete()
-
 module.exports = router;
